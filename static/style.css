@@ -1,0 +1,57 @@
+:root {
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+	background: powderblue;
+	font-family: 'Segoe UI';
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0 25px 50px;
+}
+
+.header,
+.description {
+	text-align: center;
+}
+
+.games-list {
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+}
+
+.game {
+	background: slategray;
+	border-radius: 3px;
+	width: 300px;
+	padding: 0 25px;
+}
+
+.game * {
+	background: slategrey;
+}
+
+.game li {
+	list-style: none;
+}
+
+.game-details-platforms {
+	display: flex;
+	align-items: center;
+	border-top: solid black 1px;
+}
+
+.game-details-genres {
+	display: flex;
+	align-items: center;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+}
