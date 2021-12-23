@@ -9,8 +9,4 @@ app.use(express.json());
 app.use('/', routes);
 app.use(express.static('static'));
 
-//  need to add routes to get the db data
-
-app.listen(PORT, () =>
-	console.log(`\n🎮 App running on port http://localhost:${PORT} 🎮 🎉\n`)
-);
+app.listen(PORT, () => console.log(`\n🎮 App running on port ${PORT} 🎮 🎉\n`));
