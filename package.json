@@ -3,11 +3,11 @@
 	"version": "1.0.0",
 	"description": "game database",
 	"type": "module",
-	"main": "bin/index.js",
+	"main": "server.js",
 	"scripts": {
 		"start": "concurrently \"npm run server\" \"npm run cli-start\"",
-		"dev": "concurrently \"nodemon --experimental-json-modules server.js\" \"SET PORT=3000 && nodemon src/index.js\"",
-		"server": "node --experimental-json-modules server.js",
+		"dev": "concurrently \"nodemon server.js\" \"SET PORT=3000 && nodemon src/index.js\"",
+		"server": "node server.js",
 		"cli-start": "set PORT=3000 && node src/index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
