@@ -1,8 +1,9 @@
-const router = require('express').Router();
-const path = require('path');
+import * as path from 'node:path';
+import express from 'express';
+const router = express.Router();
 
 router.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, '../../../static/index.html'));
 });
 
-module.exports = router;
+export default router;

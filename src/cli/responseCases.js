@@ -1,5 +1,5 @@
-const QUESTION_MESSAGES = require('./questionMessages');
-const QUESTION_RESPONSES = require('./questionResponses');
+import QUESTION_MESSAGES from './questionMessages';
+import QUESTION_RESPONSES from './questionResponses';
 
 const mainResponses = {
 	yes: interface =>
@@ -27,4 +27,4 @@ const mainResponses = {
 	},
 };
 
-module.exports = { mainResponses };
+export default { mainResponses };

@@ -1,8 +1,10 @@
-const router = require('express').Router();
-const htmlRoutes = require('./htmlRoutes');
-const dbRoutes = require('./dbRoutes');
+import express from 'express';
+import htmlRoutes from './htmlRoutes/index.js';
+import dbRoutes from './dbRoutes/index.js';
+
+const router = express.Router();
 
 router.use('/', htmlRoutes);
 router.use('/', dbRoutes);
 
-module.exports = router;
+export default router;

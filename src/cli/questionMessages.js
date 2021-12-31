@@ -3,4 +3,4 @@ const QUESTION_MESSAGES = {
 	question1: `Do you want to add a game to your collection?\n\n>> Commands: [ Y: Yes | N: No | S: Settings | Q: Quit ]\n>> `,
 };
 
-module.exports = QUESTION_MESSAGES;
+export default QUESTION_MESSAGES;

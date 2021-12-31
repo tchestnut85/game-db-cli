@@ -7,4 +7,4 @@ const QUESTION_RESPONSES = {
 	],
 };
 
-module.exports = QUESTION_RESPONSES;
+export default QUESTION_RESPONSES;
