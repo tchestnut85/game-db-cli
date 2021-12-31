@@ -5,15 +5,16 @@
 	"type": "module",
 	"main": "bin/index.js",
 	"scripts": {
-		"start": "concurrently \"node --experimental-json-modules server.js\" \"node src/index.js\"",
-		"dev": "concurrently \"nodemon --experimental-json-modules server.js\" \"nodemon src/index.js\"",
-		"cli-start": "node --experimental-json-modules src/index.js",
+		"start": "concurrently \"npm run server\" \"npm run cli-start\"",
+		"dev": "concurrently \"nodemon --experimental-json-modules server.js\" \"SET PORT=3000 && nodemon src/index.js\"",
+		"server": "node --experimental-json-modules server.js",
+		"cli-start": "set PORT=3000 && node src/index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Tom Chestnut",
 	"license": "MIT",
 	"bin": {
-		"game-database": "./bin/index.js"
+		"game-database": "src/index.js"
 	},
 	"dependencies": {
 		"express": "^4.17.1"
