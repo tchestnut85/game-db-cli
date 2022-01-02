@@ -5,16 +5,16 @@
 	"type": "module",
 	"main": "server.js",
 	"scripts": {
-		"start": "concurrently \"npm run server\" \"npm run cli-start\"",
-		"dev": "concurrently \"nodemon server.js\" \"SET PORT=3000 && nodemon src/index.js\"",
+		"start": "npm run server",
+		"dev": "nodemon server.js",
 		"server": "node server.js",
-		"cli-start": "set PORT=3000 && node src/index.js",
+		"cli-start": "set PORT=3000 && node app.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Tom Chestnut",
 	"license": "MIT",
 	"bin": {
-		"game-database": "src/index.js"
+		"game-database": "app.js"
 	},
 	"dependencies": {
 		"express": "^4.17.1"
